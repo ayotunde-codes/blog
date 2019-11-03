@@ -86,22 +86,20 @@ WSGI_APPLICATION = 'newBlog.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'coolblog',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1',
-        'PORT': '5432'
-    }
-}
-
 # DATABASES = {
-#
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'coolblog',
+#         'USER': 'postgres',
+#         'PASSWORD': 'postgres',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432'
+#     }
 # }
-#
-# DATABASES['default'] = 'postgres://ptrggofb:TtMB2c4bFqeXKWrmwS5GOfbmOq4A-d_e@salt.db.elephantsql.com:5432/ptrggofb'
+
+DATABASES = {}
+
+DATABASES['default'] = 'postgres://vvaaooxiuufrcm:38b965452df28234da7950160e9e14bfef2d06427b7ee723e5d409924f1f1c55@ec2-54-204-39-43.compute-1.amazonaws.com:5432/d9bgo2o6hv29bh'
 
 
 # Password validation
@@ -145,7 +143,7 @@ STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://blog-63cd.onrender.com/"
+    "https://blog-63cd.onrender.com"
 ]
 
 
